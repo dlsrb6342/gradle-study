@@ -1,6 +1,12 @@
 plugins {
+    id 'com.gradle.build-scan' version '2.1'
     id 'org.springframework.boot' version '2.1.6.RELEASE'
     id 'java'
+}
+
+buildScan {
+    termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+    termsOfServiceAgree = 'yes'
 }
 
 apply plugin: 'io.spring.dependency-management'
